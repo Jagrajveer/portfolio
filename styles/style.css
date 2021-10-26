@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto slab", Courier, monospace;
+}
+header {
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 99;
+}
+header > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: black;
+  border-radius: 5px;
+}
+header > div .logo {
+  font-weight: 500;
+  font-size: 40px;
+}
+header > div .toggle {
+  display: none;
+}
+header > div nav {
+  display: flex;
+  align-self: center;
+}
+header > div nav li {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0 10px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+main .aboutme {
+  background: linear-gradient(90deg, #000 50%, #fff 50%);
+  display: flex;
+}
+main .aboutme .left,
+main .aboutme .right {
+  height: 100vh;
+  width: 50vw;
+}
+main .aboutme .left {
+  color: #fff;
+  position: relative;
+}
+main .aboutme .left > div {
+  position: absolute;
+  top: 50%;
+  transform: translate(30%, -50%);
+}
+main .aboutme .left span {
+  font-size: 40px;
+}
+main .aboutme .left h1 {
+  font-size: 45px;
+}
+main .aboutme .left h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+main .aboutme .left {
+  display: flex;
+}
+main .aboutme img {
+  position: absolute;
+  width: 200px;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+main .aboutme .right > div {
+  position: absolute;
+  top: 50%;
+  transform: translate(30%, -50%);
+}
+main .aboutme .right > div {
+  left: 50%;
+  width: 30%;
+  font-size: 30px;
+  font-weight: bold;
+}
+main .aboutme .right > div p {
+  line-height: 50px;
+  letter-spacing: 5px;
+}
+main .blogs a {
+  color: #000;
+}
+main .blogs > div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+main .blogs {
+  margin-top: 50px;
+  padding: 10px;
+}
+main .blogs > h2 {
+  text-align: center;
+}
+main .blogs .blog {
+  width: 20%;
+  height: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), -5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+main .all-blogs {
+  /* border: 1px solid #000; */
+  margin-top: 30px;
+  margin-left: 100px;
+  font-size: 25px;
+  font-weight: bold;
+}
+main .all-blogs > span {
+  transition: 0.5s;
+}
+main .all-blogs:hover > span {
+  margin-left: 5px;
+}
+main .blogs {
+  display: flex;
+  flex-direction: column;
+}
